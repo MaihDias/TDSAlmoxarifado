@@ -1,10 +1,11 @@
-﻿
+﻿@model IEnumerable<TDSAlmoxarifado.Models.PRODUTO>
 @{
     ViewBag.Title = "Produtos";
 }
 
 <div>
     <h2>Gestão de Produtos
+        @ViewBag.errotexto
         <a href=" /Produto/Create">
             <button type="button" class="btn btn-success">Novo</button>
         </a>
@@ -24,24 +25,37 @@
             </tr>
         </thead>
         <tbody>
-            @for (int i = 0; i < 5; i++)
+            @foreach (var item in Model)
             {
                 <tr>
-                    <th scope="row">1</th>
-                    <td>Feijão</td>
-                    <td>10</td>
-                    <td>50</td>
-                    <td>20</td>
+                    <th scope="row">@item.PROID</th>
+                    <td>@item.PRODESCRICAO</td>
+                    <td>@item.PROMINIMO</td>
+                    <td>@item.PROMAXIMO</td>
+                    <td>@item.PROESTOQUE</td>
+
+                    @if (item.PROESTOQUE < item.PROMINIMO)
+                    {
+                        <td style="background-color:red;
+                                    color:white;">
+                            @item.PROESTOQUE
+                        </td>
+                    }
+                    else
+                    {
+                        <td>@item.PROESTOQUE</td>
+                    }
+
                     <td>
-                        <button type="button" class="btn btn-warning">Editar</button>
-                        <button type="button" class="btn btn-primary">Exibir</button>
-                        <button type="button" class="btn btn-danger">Excluir</button>
+                        <a href="/Produto/Edit?id=@item.PROID"> <button type="button" class="btn btn-warning">Editar</button></a>
+                        <a href="/Produto/Details?id=@item.PROID"> <button type="button" class="btn btn-primary">Exibir</button></a>
+                        <a href="/Produto/Delete?id=@item.PROID"> <button type="button" class="btn btn-danger">Excluir</button></a>
                     </td>
                 </tr>
             }
+
         </tbody>
     </table>
 
 </div>
-
 

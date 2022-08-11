@@ -84,3 +84,7 @@ C:\Users\android\Documents\TDSAlmoxarifado\TDSAlmoxarifado\TDSAlmoxarifado\obj\D
 C:\Users\android\Documents\TDSAlmoxarifado\TDSAlmoxarifado\TDSAlmoxarifado\obj\Debug\TDSAlmoxarifado.csproj.CopyComplete
 C:\Users\android\Documents\TDSAlmoxarifado\TDSAlmoxarifado\TDSAlmoxarifado\obj\Debug\TDSAlmoxarifado.dll
 C:\Users\android\Documents\TDSAlmoxarifado\TDSAlmoxarifado\TDSAlmoxarifado\obj\Debug\TDSAlmoxarifado.pdb
+C:\Users\android\Documents\TDSAlmoxarifado\TDSAlmoxarifado\TDSAlmoxarifado\bin\EntityFramework.dll
+C:\Users\android\Documents\TDSAlmoxarifado\TDSAlmoxarifado\TDSAlmoxarifado\bin\EntityFramework.SqlServer.dll
+C:\Users\android\Documents\TDSAlmoxarifado\TDSAlmoxarifado\TDSAlmoxarifado\bin\EntityFramework.xml
+C:\Users\android\Documents\TDSAlmoxarifado\TDSAlmoxarifado\TDSAlmoxarifado\bin\EntityFramework.SqlServer.xml
